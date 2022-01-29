@@ -12,12 +12,12 @@ public class BubbleSort {
 
 	public static void bubbleSort(int[] arr) {
 		int count = 0;
-		for (int iter = 0; iter < arr.length; iter++) {
-			for (int index = 0; index < arr.length - 1 - iter; index++) {
-				if (arr[index] > arr[index + 1]) {
-					int temp = arr[index];
-					arr[index] = arr[index + 1];
-					arr[index + 1] = temp;
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr.length - 1 - i; j++) {
+				if (arr[j] > arr[j + 1]) {
+					int temp = arr[j];
+					arr[j] = arr[j + 1];
+					arr[j + 1] = temp;
 				}
 				System.out.println(Arrays.toString(arr));
 				count++;

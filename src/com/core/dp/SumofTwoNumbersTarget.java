@@ -14,6 +14,7 @@ public class SumofTwoNumbersTarget {
 		System.out.println("resut : " + Arrays.toString(result));
 	}
 
+	// better
 	private static int[] findTwoSum(int[] nums, int target) {
 		Map<Integer, Integer> numMap = new HashMap<>();
 		for (int i = 0; i < nums.length; i++) {
@@ -24,8 +25,11 @@ public class SumofTwoNumbersTarget {
 				numMap.put(nums[i], i);
 			}
 		}
-		return new int[] {};
+		return new int[] {}; 
 	}
+	
+	
+	
 	private static int[] findTwoSum_Sorting(int[] nums, int target) {
         Arrays.sort(nums);
         int left = 0;
