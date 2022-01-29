@@ -57,7 +57,6 @@ public class SinglyLinkedListImpl<T> {
 		Node<T> nd = new Node<T>();
 		nd.setValue(obj);
 		nd.setNextRef(null);
-		size++;
 		if (head == null) {
 			head = nd;
 			tail = nd;
@@ -65,6 +64,7 @@ public class SinglyLinkedListImpl<T> {
 			tail.setNextRef(nd);
 			tail = nd;
 		}
+		size++;
 
 	}
 
@@ -96,9 +96,8 @@ public class SinglyLinkedListImpl<T> {
 			return;
 		}
 		/*
-		 * if (position == size) { Node s = head; Node t = head; while (s !=
-		 * tail) { t = s; s = s.getNextRef(); } tail = t; tail.setNextRef(null);
-		 * size--; return; }
+		 * if (position == size) { Node s = head; Node t = head; while (s != tail) { t =
+		 * s; s = s.getNextRef(); } tail = t; tail.setNextRef(null); size--; return; }
 		 */
 		Node ptr = head;
 		position = position - 1;
