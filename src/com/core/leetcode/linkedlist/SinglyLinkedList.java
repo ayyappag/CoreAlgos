@@ -88,19 +88,3 @@ public class SinglyLinkedList {
 		pred.next = pred.next.next;
 	}
 }
-
-/*
- * class ListNode { int val; ListNode next;
- * 
- * ListNode(int x) { val = x; } }
- */
-class SingleListNode {
-
-	int val;
-	SingleListNode next;
-
-	SingleListNode(int x) {
-		val = x;
-	}
-
-}

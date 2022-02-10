@@ -9,6 +9,7 @@ class Node {
 		left = right = null;
 	}
 }
+
 // Level order traversal of a tree is breadth first traversal for the tree. 
 // Depth First Search
 public class BinaryTreeDFS {
