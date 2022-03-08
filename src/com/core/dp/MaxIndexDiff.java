@@ -7,20 +7,12 @@ public class MaxIndexDiff {
 		//int n = 9;
 //		int a[] = { 34, 8, 10, 3, 2, 80, 30, 33, 1 };
 		int n=15;
-		int a[] = { 65, 6, 74, 94, 56, 89, 9, 63, 75, 25, 34, 68, 93, 48, 16 };
-		int index = index(a, n);
+		int a[] = { 65, 6, 74, 94, 56, 89, 9, 63, 75, 
+				25, 34, 68, 93, 48, 16 };
+		int index = maxIndexDiff(a, n);
 		System.out.println("index " + index);
 	}
 
-	public static int index(int a[], int n) { // not working 
-		int index = 0;
-		for (int i = 0, j = n - 1; i < n - 1; i++, j--) {
-			if (a[i] <= a[j]) {
-				return j - i;
-			}
-		}
-		return -1;
-	}
 	
 	   // A[]: input array
     // N: size of array
@@ -45,6 +37,8 @@ public class MaxIndexDiff {
            
        }
        
+       System.out.println("i= " + i + " ; j = " + j);
+       System.out.println("i= " + A[i] + " ; j = " + A[j]);
        return k;
         
     }

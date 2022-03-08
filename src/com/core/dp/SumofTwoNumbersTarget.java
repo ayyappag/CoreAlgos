@@ -29,7 +29,7 @@ public class SumofTwoNumbersTarget {
 	}
 	
 	
-	
+	// here is another approach which works when you need to return the numbers instead of their indexes.
 	private static int[] findTwoSum_Sorting(int[] nums, int target) {
         Arrays.sort(nums);
         int left = 0;

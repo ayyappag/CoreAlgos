@@ -1,7 +1,9 @@
 package com.core.dp;
 
+import java.util.Arrays;
+
 public class SmallestDifference {
-	
+
 	// Brute Force approach: Use two for loops
 	public static int[] findSmallestDifferencePair_Naive(int[] a1, int[] a2) {
 		double smallestDiff = Double.MAX_VALUE;
@@ -26,5 +28,30 @@ public class SmallestDifference {
 
 		int[] pair = findSmallestDifferencePair_Naive(a1, a2);
 		System.out.println(pair[0] + " " + pair[1]);
+	}
+
+	// binary search template
+	public static int[] findSmallestDifferencePair2(int[] a1, int[] a2) {
+		Arrays.sort(a1);
+		Arrays.sort(a2);
+
+		double smallestDiff = Double.MAX_VALUE;
+		int[] smallestDiffPair = new int[2];
+		int i = 0, j = 0;
+
+		while (i < a1.length && j < a2.length) {
+			double currentDiff = Math.abs(a1[i] - a2[j]);
+			if (currentDiff < smallestDiff) {
+				smallestDiff = currentDiff;
+				smallestDiffPair[0] = a1[i];
+				smallestDiffPair[1] = a2[j];
+			}
+			if (a1[i] < a2[j]) {
+				i++;
+			} else {
+				j++;
+			}
+		}
+		return smallestDiffPair;
 	}
 }

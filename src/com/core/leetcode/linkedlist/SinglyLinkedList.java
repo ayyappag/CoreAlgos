@@ -2,6 +2,9 @@ package com.core.leetcode.linkedlist;
 
 // https://leetcode.com/problems/design-linked-list/
 
+
+
+ // best design *****
 public class SinglyLinkedList {
 
 	int size;
@@ -84,6 +87,8 @@ public class SinglyLinkedList {
 		for (int i = 0; i < index; ++i)
 			pred = pred.next;
 
+		
+		// considering previous node and mapping to next ->next reference
 		// delete pred.next
 		pred.next = pred.next.next;
 	}

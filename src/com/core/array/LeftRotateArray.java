@@ -24,10 +24,8 @@ public class LeftRotateArray {
 		int temp;
 		while (start < end) { // swapping the values
 			temp = arr[start];
-			arr[start] = arr[end];
-			arr[end] = temp;
-			start++;
-			end--;
+			arr[start++] = arr[end];
+			arr[end--] = temp;
 		}
 	}
 

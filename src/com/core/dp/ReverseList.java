@@ -61,15 +61,17 @@ public class ReverseList {
 
 		while (left < right) {
 			int temp = temparray[left];
-			temparray[left] = temparray[right];
-			temparray[right] = temp;
-			left++;
-			right--;
+			temparray[left++] = temparray[right];
+			temparray[right--] = temp;
+			// left++;
+			// right--;
 		}
 
 		System.out.println(" final - " + Arrays.toString(temparray));
 	}
 
+	
+	// list reverse
 	public static void java8Methods(List<Integer> list) {
 
 		IntStream.range(0, list.size())

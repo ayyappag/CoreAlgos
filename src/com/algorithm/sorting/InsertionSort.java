@@ -6,6 +6,7 @@ public class InsertionSort {
 
 	public static void main(String[] args) {
 		int[] arr = { 3, 90, -2, 8, 76, 36 };
+		
 		insertionSort(arr);
 		System.out.println("final output:" + Arrays.toString(arr));
 

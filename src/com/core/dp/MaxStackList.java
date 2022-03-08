@@ -16,18 +16,18 @@ public class MaxStackList {
 		push(3);
 		push(9);
 
-		System.out.println("stack" + stack.toString());
-		System.out.println("min stack" + minstack.toString());
+		System.out.println("1 - stack" + stack.toString());
+		System.out.println("1 - min stack" + minstack.toString());
 		pop();
 
-		System.out.println("pop stack" + stack.toString());
-		System.out.println("pop min stack" + minstack.toString());
-		System.out.println("get max value " + getMax());
+		System.out.println("2 - pop stack" + stack.toString());
+		System.out.println("2 - pop min stack" + minstack.toString());
+		System.out.println("2 - get max value " + getMax());
 		pop();
 
-		System.out.println("pop2 stack" + stack.toString());
-		System.out.println("pop2 min stack" + minstack.toString());
-		System.out.println("get max value " + getMax());
+		System.out.println("3 - pop2 stack" + stack.toString());
+		System.out.println("3 - pop2 min stack" + minstack.toString());
+		System.out.println("3 - get max value " + getMax());
 	}
 
 	public static void push(int element) {

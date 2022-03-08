@@ -35,7 +35,7 @@ public class RemoveDuplicates {
 	public static void main(String[] args) {
 		int arr[] = { 1, 2, 2, 3, 4, 4, 4, 5, 5 };
 		int n = arr.length;
-		
+
 		int count = approach2(arr);
 		for (int i = 0; i < count; i++)
 			System.out.print(arr[i] + " ");
@@ -58,12 +58,10 @@ public class RemoveDuplicates {
 				j++;
 			}
 		}
-
-		arr[j++] = arr[arr.length-1];
+		System.out.println("test");
+		arr[j++] = arr[arr.length - 1];
 		return j;
 	}
-	
-
 
 	public int removeDuplicates3(int[] nums) {
 

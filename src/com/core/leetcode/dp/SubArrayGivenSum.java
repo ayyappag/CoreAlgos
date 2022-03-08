@@ -12,8 +12,8 @@ public class SubArrayGivenSum {
 
 	public static void main(String[] args) {
 
-		int a[] = { 1, 1, 1, 2, -1 };
-		int i = subarraySumLeetcode(a, 1);
+		int a[] = { 1, 3, 3, 2, -1 };
+		int i = subarraySumLeetcode(a, 2);
 
 		System.out.println("First method " + i);
 
@@ -28,7 +28,7 @@ public class SubArrayGivenSum {
 
 	}
 
-	// number of combinations - better method
+	// number of combinations - better method -- correct
 	public static int subarraySumLeetcode(int[] nums, int k) {
 		System.out.println(" number of combinations");
 		int count = 0, sum = 0;
@@ -59,7 +59,8 @@ public class SubArrayGivenSum {
 			}
 			map.put(sum, map.getOrDefault(sum, 0) + 1);
 		}
-
+		System.out.println("list method 2 " + Arrays.toString(nums));
+		
 		return list;
 	}
 

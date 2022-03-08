@@ -31,7 +31,15 @@ public class CyclicallyRotateArray {
 		System.out.println(Arrays.toString(arr));
 		rotate2(arr);
 		System.out.println(Arrays.toString(arr));
+		int no_rotations = 3;
+		rotations(arr, no_rotations);
+		System.out.println(Arrays.toString(arr));
 
+	}
+
+	public static void rotations(int[] arr, int k) {
+		for (int i = 0; i < k; i++)
+			rotate(arr);
 	}
 
 }

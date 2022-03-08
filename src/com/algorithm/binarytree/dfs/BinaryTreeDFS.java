@@ -1,5 +1,7 @@
 package com.algorithm.binarytree.dfs;
 
+//Level order traversal of a tree is breadth first traversal for the tree. 
+//Depth First Search
 class Node {
 	int data;
 	Node left, right;
@@ -21,7 +23,8 @@ public class BinaryTreeDFS {
 	}
 
 	/*
-	 * Compute the "height" of a tree -- the number of nodes along the longest path
+	 * Compute the "height" of a tree -- 
+	 * the number of nodes along the longest path
 	 * from the root node down to the farthest leaf node.
 	 */
 	int height(Node root) {

@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class AddTwoArray {
 
 	public static void main(String[] args) {
-		int[] l1 = { 9, 9, 9, 9, 9, 9, 9 }, l2 = { 9, 9, 9, 9 };
+		int[] l1 = { 9, 9, 9, 9, 9, 9, 1 }, l2 = { 9, 9, 9, 9 };
 		int addition = convertInt(l1) + convertInt(l2);
 		System.out.println(addition);
 		System.out.println(Arrays.toString(convertArray(addition)));
